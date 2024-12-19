@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		189547F72D14094D002AF400 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 189547F62D14094D002AF400 /* SwiftUICharts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		189547E42D140927002AF400 /* iSTOCKr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSTOCKr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189547F72D14094D002AF400 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = iSTOCKr;
 			packageProductDependencies = (
+				189547F62D14094D002AF400 /* SwiftUICharts */,
 			);
 			productName = iSTOCKr;
 			productReference = 189547E42D140927002AF400 /* iSTOCKr.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 189547DB2D140927002AF400;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				189547F52D14094D002AF400 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 189547E52D140927002AF400 /* Products */;
 			projectDirPath = "";
@@ -324,6 +333,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		189547F52D14094D002AF400 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		189547F62D14094D002AF400 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 189547F52D14094D002AF400 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 189547DC2D140927002AF400 /* Project object */;
 }
